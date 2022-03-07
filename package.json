@@ -1,9 +1,9 @@
 {
-  "name": "webpack-boilerplate",
+  "name": "keki-portfolio",
   "version": "3.0.1",
-  "description": "Sensible webpack 5 boilerplate using Babel and PostCSS.",
+  "description": "A portfolio with CSS html and Vanilla JS",
   "main": "index.js",
-  "author": "Tania Rascia",
+  "author": "Keki R",
   "license": "MIT",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
@@ -11,10 +11,14 @@
     "lint": "eslint 'src/**/*.js' || true",
     "prettify": "prettier --write 'src/**/*.js'"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kekir/portfolio"
+  },
   "keywords": [
     "webpack",
     "webpack 5",
-    "webpack boilerplate"
+    "portfolio html scss js"
   ],
   "devDependencies": {
     "@babel/core": "^7.15.8",
