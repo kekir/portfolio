@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      document.getElementsByTagName('html')[0].className += ' js'
+    </script>
+
+    <script defer src="./frontend.js"></script>
+
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.png" />
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+
+  <body>
+    <!-- HEADER / _1_main-header -->
+    <%= require('../partials/header.html?raw') %>
+
+    <!-- HERO / _1_hero -->
+    <section class="hero bg padding-y-xxl">
+      <div class="container max-width-adaptive-sm">
+        <div class="text-sm opacity-60% margin-bottom-xxs">Hi, I'm Keki</div>
+
+        <div class="text-component margin-bottom-sm">
+          <h1>Front-end developer / UI Designer</h1>
+          <p>
+            I have been freelancing for the past 6 years as a front-end developer. I have passion
+            for design, prototypes and animated interactions. I create successful websites that are
+            optimised, easy to use, and built with best practices
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-sm">
+          <a href="#0" class="btn btn--sm btn--primary">My Clients</a>
+          <a href="#0" class="color-inherit">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS -->
+    <section class="position-relative z-index-1 padding-y-xl">
+      <div class="container max-width-adaptive-lg">
+        <div class="grid gap-xl">
+          <div class="text-component text-center">
+            <!-- <h1 class="reveal-fx reveal-fx--translate-up" data-reveal-fx-delta="50">
+              Hey, I’m a, Front-end developer
+            </h1> -->
+          </div>
+          <div class="card col-4@md">
+            <figure class="card__img">
+              <img src="/img/prototype.jpg" alt="Card preview img" />
+            </figure>
+
+            <div class="card__content">
+              <div class="text-component">
+                <h4>Design & Prototyping</h4>
+                <p class="text-sm color-contrast-medium">
+                  A design prototype gives the team a feel of the use interface before it is coded.
+                  By involving a front-end developer at the design & prototyping phase, technical
+                  challenges can be solved early, producing a more cohesive product in the most time
+                  efficient manner.
+                </p>
+              </div>
+
+              <div class="margin-top-sm">
+                <a class="btn btn--subtle btn--sm" href="#0">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-4@md">
+            <figure class="card__img">
+              <img src="img/frontend.jpg" alt="Card preview img" />
+            </figure>
+
+            <div class="card__content">
+              <div class="text-component margin-bottom-xl">
+                <h4>Front-end Development</h4>
+                <p class="text-sm color-contrast-medium">
+                  I design and build websites that, are user centric and solves specific business
+                  requirements. Ensuring ease of use and simplicity for your clientele. Which
+                  results in a modern interface of visual assets comprising of your services,
+                  products and brands.
+                </p>
+              </div>
+
+              <div class="margin-top-sm">
+                <a class="btn btn--subtle btn--sm" href="#0">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-4@md">
+            <figure class="card__img">
+              <img src="/img/animated.jpg" alt="Card preview img" />
+            </figure>
+
+            <div class="card__content">
+              <div class="text-component margin-bottom-xl">
+                <h4>Animated Interactions</h4>
+                <p class="text-sm color-contrast-medium">
+                  To make things more engaging and less boring, I often sprinkle a few moving parts
+                  and animation that creates interest and appeals the user. Creating animated
+                  micro-interactions, like achieving parallax effects, precise reveal animations,
+                  progress bars, etc.
+                </p>
+              </div>
+
+              <div class="margin-top-sm">
+                <a class="btn btn--subtle btn--sm" href="#0">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- _1_devices / _3_feature-v14 -->
+    <section class="position-relative z-index-1 padding-y-xl bg-gradient-primary-top">
+      <div class="container max-width-adaptive-lg">
+        <div class="grid gap-lg items-center">
+          <div class="col-5@md col-6@lg">
+            <div class="text-component">
+              <h2>Website Development</h2>
+              <p>
+                Simplicity is one of the rules and apraoch i mostly believe in. The audience should
+                have an enjoyable, positive experience when using your website. Whether their
+                objective is reading content, watching a video or enrolling in a course, every
+                action should be clear and concise throughout the website. Our approach is to create
+                a website that strengthens your company’s brand while ensuring ease of use and
+                simplicity for your audience. This experience enables me to come up with a product
+                that evolves into an optimal user experience.
+              </p>
+            </div>
+
+            <div class="margin-top-sm">
+              <div class="flex flex-wrap gap-sm items-center">
+                <a href="#0" class="btn btn--primary">Download</a>
+                <a href="#0" class="color-inherit">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-7@md col-6@lg">
+            <div class="device-group-4">
+              <div class="dev-phone dev-phone--top-light" aria-label="Image description">
+                <div class="dev-phone__body">
+                  <div class="dev-phone__media">
+                    <div class="dev-phone__notch"></div>
+                    <svg viewBox="0 0 750 1334">
+                      <rect width="750" height="1334" fill="var(--color-contrast-lower)" />
+                      <path
+                        d="M130 850.633L436.4 544.233L620.24 850.633H130Z"
+                        fill="var(--color-contrast-medium)"
+                      />
+                      <path
+                        d="M192.328 606.56C226.172 606.56 253.608 579.124 253.608 545.28C253.608 511.436 226.172 484 192.328 484C158.484 484 131.048 511.436 131.048 545.28C131.048 579.124 158.484 606.56 192.328 606.56Z"
+                        fill="var(--color-contrast-medium)"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="dev-phone__shadow"></div>
+              </div>
+
+              <div class="dev-desktop" aria-label="Image description">
+                <div class="dev-desktop__body">
+                  <div class="dev-desktop__media">
+                    <svg viewBox="0 0 1920 1200">
+                      <pattern id="img1" patternUnits="userSpaceOnUse" width="1920" height="1200">
+                        <image href="/img/seafood.png" width="1920" height="1200" />
+                      </pattern>
+                      <rect width="1920" height="1200" fill="url(#img1)" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="dev-desktop__base">
+                  <div class="dev-desktop__base-top"></div>
+                  <div class="dev-desktop__base-bottom"></div>
+                  <div class="dev-desktop__shadow"></div>
+                </div>
+              </div>
+
+              <div class="dev-laptop" aria-label="Image description">
+                <div class="dev-laptop__body">
+                  <div class="dev-laptop__media">
+                    <svg viewBox="0 0 1920 1200">
+                      <pattern id="img1" patternUnits="userSpaceOnUse" width="1920" height="1200">
+                        <image href="/img/seafood.png" width="1920" height="1200" />
+                      </pattern>
+                      <rect width="1920" height="1200" fill="url(#img1)" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="dev-laptop__base"></div>
+                <div class="dev-laptop__shadow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- _1_3d-text-block -->
+    <section class="position-relative z-index-1 padding-top-xl">
+      <div class="container max-width-adaptive-lg">
+        <h1 class="sr-only">This is what,</h1>
+
+        <div class="text-xl text-xxl@xs font-bold">
+          <p class="color-contrast-higher font-secondary">This is what,</p>
+
+          <a class="td-text-block font-secondary" href="#0" aria-label="Join our club">
+            <span class="td-text-block__wrapper">
+              <em class="td-text-block__front-text">I believe in, &rarr;</em>
+              <em class="td-text-block__final-text">Come Say Hi &rarr;</em>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- list -->
+    <section class="margin-y-xl">
+      <div class="container max-width-sm">
+        <ol class="list-v2 list-v2--ol">
+          <li>
+            <div class="margin-bottom-xs">
+              <h4 class="list-v2__title font-primary">
+                <div class="list-v2__bullet"></div>
+                Web today
+              </h4>
+            </div>
+
+            <div class="list-v2__content">
+              <div class="text-component">
+                <p class="color-contrast-medium padding-bottom-sm">
+                  Web technology is evolving and getting biger at a alarming rate. The number of
+                  tools available and the methods to use them are overwhelming
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="margin-bottom-xs">
+              <h4 class="list-v2__title font-primary">
+                <div class="list-v2__bullet"></div>
+                Other Developers
+              </h4>
+            </div>
+
+            <div class="list-v2__content">
+              <div class="text-component">
+                <p class="color-contrast-medium padding-bottom-sm">
+                  Most of the develpers today put their comfort, needs and desire before the purpose
+                  of the project which often leads to poor performance. They would list some latest
+                  cutting edge tools as part of their skills but would faile to have solid
+                  foundational skills
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="margin-bottom-xs">
+              <h4 class="list-v2__title font-primary">
+                <div class="list-v2__bullet"></div>
+                My Belief
+              </h4>
+            </div>
+
+            <div class="list-v2__content">
+              <div class="text-component">
+                <p class="color-contrast-medium padding-bottom-sm">
+                  I tend to analyse a customer's requirement and understand what business problem
+                  they are trying to solve. Also keeping in my mind the end user experience they are
+                  trying to create. After have a solid understanding of those aspects I will offer
+                  them tools and solution that will be sustainable and maintainable. Often times the
+                  simplest approach always seems to be the most efficient and successful
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="margin-bottom-xs">
+              <h4 class="list-v2__title font-primary">
+                <div class="list-v2__bullet"></div>
+                Get Started
+              </h4>
+            </div>
+
+            <div class="list-v2__content">
+              <div class="text-component">
+                <p class="color-contrast-medium">
+                  If you’d like to know moer about how i operate with my clients, please get in
+                  touch and forward a little information about the project you have in mind. I can
+                  forward you a little Startup advise that will answer most of your concerns.
+                  <br />
+                  <br />
+                  We can then set up a call or caht session nd discuss how I can be of most value to
+                  your project. I endeavour to respond to all enquiries within 1 working day. I look
+                  forward to learning about your project.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="margin-top-sm">
+              <div class="flex flex-wrap gap-sm items-center">
+                <a href="/contact.html" class="btn btn--primary">Get in Touch</a>
+                <a href="/portfolio.html" class="color-inherit">View my work</a>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- accordion / _1_accordion -->
+    <!-- <section class="position-relative z-index-1 padding-y-xxl" data-theme="dark">
+      <div class="container max-width-sm position-relative z-index-2">
+        <div class="margin-bottom-lg">
+          <h1 class="text-center">Questions <em class="font-italic">&amp;</em> Answers</h1>
+        </div>
+
+        <ul class="accordion js-accordion" data-animation="on" data-multi-items="on">
+          <li class="accordion__item js-accordion__item">
+            <button
+              class="reset accordion__header padding-y-sm padding-x-md js-tab-focus"
+              type="button"
+            >
+              <span class="text-md">How can I download the invoice for my purchase?</span>
+
+              <svg
+                class="icon accordion__icon-arrow-v2 no-js:is-hidden"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <g
+                  class="icon__group"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="square"
+                  stroke-miterlimit="10"
+                >
+                  <path d="M2 2l12 12" />
+                  <path d="M14 2L2 14" />
+                </g>
+              </svg>
+            </button>
+
+            <div
+              class="accordion__panel padding-top-xxs padding-x-md padding-bottom-md js-accordion__panel"
+            >
+              <div class="text-component">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum a ab quae quas
+                  optio ut officia quia? Modi at impedit dolorem est voluptatem facilis, beatae
+                  atque tenetur, soluta dolorum inventore sapiente laborum. Alias esse soluta porro
+                  distinctio aperiam, qui suscipit.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordion__item js-accordion__item">
+            <button
+              class="reset accordion__header padding-y-sm padding-x-md js-tab-focus"
+              type="button"
+            >
+              <span class="text-md">How many devices can I use?</span>
+
+              <svg
+                class="icon accordion__icon-arrow-v2 no-js:is-hidden"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <g
+                  class="icon__group"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="square"
+                  stroke-miterlimit="10"
+                >
+                  <path d="M2 2l12 12" />
+                  <path d="M14 2L2 14" />
+                </g>
+              </svg>
+            </button>
+
+            <div
+              class="accordion__panel padding-top-xxs padding-x-md padding-bottom-md js-accordion__panel"
+            >
+              <div class="text-component">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum a ab quae quas
+                  optio ut officia quia? Modi at impedit dolorem est voluptatem facilis, beatae
+                  atque tenetur, soluta dolorum inventore sapiente laborum. Alias esse soluta porro
+                  distinctio aperiam, qui suscipit.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum a ab quae quas
+                  optio ut officia quia? Modi at impedit dolorem est voluptatem facilis, beatae
+                  atque tenetur, soluta dolorum inventore sapiente laborum. Alias esse soluta porro
+                  distinctio aperiam, qui suscipit.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordion__item js-accordion__item">
+            <button
+              class="reset accordion__header padding-y-sm padding-x-md js-tab-focus"
+              type="button"
+            >
+              <span class="text-md">What is the license of your resources?</span>
+
+              <svg
+                class="icon accordion__icon-arrow-v2 no-js:is-hidden"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <g
+                  class="icon__group"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="square"
+                  stroke-miterlimit="10"
+                >
+                  <path d="M2 2l12 12" />
+                  <path d="M14 2L2 14" />
+                </g>
+              </svg>
+            </button>
+
+            <div
+              class="accordion__panel padding-top-xxs padding-x-md padding-bottom-md js-accordion__panel"
+            >
+              <div class="text-component">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum a ab quae quas
+                  optio ut officia quia? Modi at impedit dolorem est voluptatem facilis, beatae
+                  atque tenetur, soluta dolorum inventore sapiente laborum. Alias esse soluta porro
+                  distinctio aperiam, qui suscipit.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordion__item js-accordion__item">
+            <button
+              class="reset accordion__header padding-y-sm padding-x-md js-tab-focus"
+              type="button"
+            >
+              <span class="text-md">Can I suggest new app features?</span>
+
+              <svg
+                class="icon accordion__icon-arrow-v2 no-js:is-hidden"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <g
+                  class="icon__group"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="square"
+                  stroke-miterlimit="10"
+                >
+                  <path d="M2 2l12 12" />
+                  <path d="M14 2L2 14" />
+                </g>
+              </svg>
+            </button>
+
+            <div
+              class="accordion__panel padding-top-xxs padding-x-md padding-bottom-md js-accordion__panel"
+            >
+              <div class="text-component">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum a ab quae quas
+                  optio ut officia quia? Modi at impedit dolorem est voluptatem facilis, beatae
+                  atque tenetur, soluta dolorum inventore sapiente laborum. Alias esse soluta porro
+                  distinctio aperiam, qui suscipit.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum a ab quae quas
+                  optio ut officia quia? Modi at impedit dolorem est voluptatem facilis, beatae
+                  atque tenetur, soluta dolorum inventore sapiente laborum. Alias esse soluta porro
+                  distinctio aperiam, qui suscipit.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section> -->
+
+    <!-- testimonial / _2_testimonials / _1_rating  -->
+    <section>
+      <div class="container max-width-adaptive-lg padding-y-xl">
+        <div class="margin-bottom-lg">
+          <h1 class="text-center">Hear it from my customers</h1>
+        </div>
+
+        <div class="grid gap-sm">
+          <div
+            class="bg-contrast-lower bg-opacity-30% radius-md padding-md flex@md flex-column@md col-4@md"
+          >
+            <svg
+              class="icon icon--xl color-contrast-low margin-bottom-xxs"
+              aria-hidden="true"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+            >
+              <polygon points="2 36 17 2 26 2 15 36 26 36 26 62 2 62 2 36" />
+              <polygon points="38 36 53 2 62 2 51 36 62 36 62 62 38 62 38 36" />
+            </svg>
+
+            <blockquote class="line-height-md margin-bottom-md">
+              <mark> Working with Keki was better than expected and we had really high </mark>
+              expectations. He is an incredibly talented developer but what really makes him stand
+              out is his work ethic and steady approach. Time after time, and without us asking, he
+              added enhancements and improvements that resulted in a better end product for us and
+              our clients.
+            </blockquote>
+
+            <footer class="flex flex-wrap items-center margin-top-auto@md">
+              <figure class="flex-shrink-0 margin-right-xxs" aria-hidden="true">
+                <img
+                  class="block width-lg height-lg radius-50% border border-2 border-bg"
+                  src="/img/cl-1.jpg"
+                  alt="Emily Ewing"
+                />
+              </figure>
+
+              <cite class="text-sm">
+                <strong>Emily Ewing</strong>
+                <span class="block color-contrast-medium margin-top-xxxxs"
+                  >John Wiley & Sons, Inc</span
+                >
+              </cite>
+            </footer>
+          </div>
+
+          <div
+            class="bg-contrast-lower bg-opacity-30% radius-md padding-md flex@md flex-column@md col-4@md"
+          >
+            <svg
+              class="icon icon--xl color-contrast-low margin-bottom-xxs"
+              aria-hidden="true"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+            >
+              <polygon points="2 36 17 2 26 2 15 36 26 36 26 62 2 62 2 36" />
+              <polygon points="38 36 53 2 62 2 51 36 62 36 62 62 38 62 38 36" />
+            </svg>
+
+            <blockquote class="line-height-md margin-bottom-md">
+              <mark> Keki, did exceptional work based on the specs we gave him </mark>, for each
+              project, but he also gave input on how to make the end product even better and cared
+              me how users would engage with the builds. I will be using Keki again in the future
+              and would highly recommend his services to anyone
+            </blockquote>
+
+            <footer class="flex flex-wrap items-center margin-top-auto@md">
+              <figure class="flex-shrink-0 margin-right-xxs" aria-hidden="true">
+                <img
+                  class="block width-lg height-lg radius-50% border border-2 border-bg"
+                  src="/img/cl-3.jpg"
+                  alt="James Powell"
+                />
+              </figure>
+
+              <cite class="text-sm">
+                <strong>James Powell</strong>
+                <span class="block color-contrast-medium margin-top-xxxxs"
+                  >Developer at CompanyY</span
+                >
+              </cite>
+            </footer>
+          </div>
+
+          <div
+            class="bg-contrast-lower bg-opacity-30% radius-md padding-md flex@md flex-column@md col-4@md"
+          >
+            <svg
+              class="icon icon--xl color-contrast-low margin-bottom-xxs"
+              aria-hidden="true"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+            >
+              <polygon points="2 36 17 2 26 2 15 36 26 36 26 62 2 62 2 36" />
+              <polygon points="38 36 53 2 62 2 51 36 62 36 62 62 38 62 38 36" />
+            </svg>
+
+            <blockquote class="line-height-md margin-bottom-md">
+              I have worked with Keki on two complex projects and in both cases, the work was done
+              on time, on budget, and with a high degree of professionalism. Across the board,
+              everyone enjoyed working with Keki.
+            </blockquote>
+
+            <footer class="flex flex-wrap items-center margin-top-auto@md">
+              <figure class="flex-shrink-0 margin-right-xxs" aria-hidden="true">
+                <img
+                  class="block width-lg height-lg radius-50% border border-2 border-bg"
+                  src="/img/cl-4.jpg"
+                  alt="Olivia Gribben"
+                />
+              </figure>
+
+              <cite class="text-sm">
+                <strong>Olivia Gribben</strong>
+                <span class="block color-contrast-medium margin-top-xxxxs">CEO at CompanyZ</span>
+              </cite>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer / _1_main-footer -->
+    <%= require('../partials/footer.html?raw') %>
+  </body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      document.getElementsByTagName('html')[0].className += ' js'
+    </script>
+    <script defer src="./frontend.js"></script>
+
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.png" />
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <%= require('../partials/header.html?raw') %>
+
+    <!-- PAGEHEADER/BREADCRUMBS -->
+    <%= require('../partials/pagehead.html?raw') %>
+
+    <!-- HOW / _1_how-it-works -->
+    <section class="position-relative z-index-1 padding-y-lg">
+      <div class="container max-width-adaptive-md">
+        <div class="margin-bottom-xl">
+          <h2 class="text-center">Approach to, Writing the Web</h2>
+        </div>
+
+        <ol class="hiw-list">
+          <li class="hiw-list__item">
+            <div class="hiw-list__item-inner">
+              <div class="hiw-list__counter" aria-hidden="true"></div>
+
+              <div class="flex-grow">
+                <div class="hiw-list__content grid gap-md items-center@md">
+                  <figure class="col-6@md">
+                    <img class="block width-100%" src="/img/folio-1.jpg" alt="Image description" />
+                  </figure>
+
+                  <div class="col-6@md">
+                    <div class="text-component">
+                      <h2 class="text-lg">Web Design - Vanilla Approach</h2>
+                      <p class="color-contrast-medium">
+                        This approach is what I call, keeping the web on a diet. This is done by
+                        using the vanilla web technologies, the base layer being a plain and simple
+                        HTML doing what it is meant to do. We make it look as it should by just
+                        adding the required CSS. Make it act and react as we want with just vanilla
+                        JavaScript.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="hiw-list__item">
+            <div class="hiw-list__item-inner">
+              <div class="hiw-list__counter" aria-hidden="true"></div>
+
+              <div class="flex-grow">
+                <div class="hiw-list__content grid gap-md items-center@md">
+                  <figure class="col-6@md">
+                    <img class="block width-100%" src="/img/folio-2.jpg" alt="Image description" />
+                  </figure>
+
+                  <div class="col-6@md">
+                    <div class="text-component">
+                      <h2 class="text-lg">Web Design - Jamstack Approach</h2>
+                      <p class="color-contrast-medium">
+                        Jamstack is an architecture designed to make the web faster, more secure,
+                        and easier to scale. It builds on many of the tools and workflows which
+                        developers love, and which bring maximum productivity. JAMstack is a term
+                        that describes a modern web development architecture based on JavaScript,
+                        APIs, and Markup (JAM)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="hiw-list__item">
+            <div class="hiw-list__item-inner">
+              <div class="hiw-list__counter" aria-hidden="true"></div>
+
+              <div class="flex-grow">
+                <div class="hiw-list__content grid gap-md items-center@md">
+                  <figure class="col-6@md">
+                    <img class="block width-100%" src="/img/folio-3.jpg" alt="Image description" />
+                  </figure>
+
+                  <div class="col-6@md">
+                    <div class="text-component">
+                      <h2 class="text-lg">WordPress - Themes / sites</h2>
+                      <p class="color-contrast-medium">
+                        There are instance whereby clients require the ability to manage and update
+                        content on a regular basis. WordPress being the world’s most popular content
+                        management system. I present my client with the ability to easily login and
+                        manage their content as simply and quickly as possible.Wordpress CMS is a
+                        user-friendly administrative area allowing you to easily edit your website's
+                        content.
+                      </p>
+                    </div>
+
+                    <div class="margin-top-md">
+                      <a class="btn btn--sm btn--primary" href="#0">Get Started</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TABS / _2_tabs-v3 -->
+    <section class="position-relative z-index-1 padding-y-lg">
+      <div class="container max-width-adaptive-lg">
+        <div class="tabs-v3 js-tabs">
+          <ul class="tabs-v3__controls js-tabs__controls" aria-label="Tabs Interface">
+            <li>
+              <a href="#tab1Panel1" class="tabs-v3__control js-tab-focus" aria-selected="true"
+                >01 Requirements Gathering</a
+              >
+            </li>
+
+            <li>
+              <a href="#tab1Panel2" class="tabs-v3__control js-tab-focus">02 Creating Prototype</a>
+            </li>
+            <li>
+              <a href="#tab1Panel3" class="tabs-v3__control js-tab-focus">03 Content Creation</a>
+            </li>
+            <li><a href="#tab1Panel4" class="tabs-v3__control js-tab-focus">04 Develpoment</a></li>
+            <li><a href="#tab1Panel5" class="tabs-v3__control js-tab-focus">05 Launch</a></li>
+          </ul>
+
+          <div class="tabs-v3__panels js-tabs__panels">
+            <section id="tab1Panel1" class="tabs-v3__panel is-visible js-tabs__panel">
+              <div class="text-component">
+                <h4>Help me help you situation</h4>
+                <p>
+                  As in other spheres of software development, the front-end development approach
+                  begins with collecting and defining business requirements. Gathering requirements
+                  for the project is the most important part. During this stage, the product owner
+                  describes the expectations of the project: what the goal of the project is; who
+                  the target audience is; how they will use the product.
+                </p>
+                <p>
+                  version of the future application. It demonstrates a basic idea of what the app
+                  will look like and how it will work. After receiving client feedback, the
+                  development team modifies the prototype and presents it to the client again for
+                  evaluation. Once the client approves the prototype, it is used as a requirement
+                  for building the actual application.
+                </p>
+              </div>
+            </section>
+
+            <section id="tab1Panel2" class="tabs-v3__panel js-tabs__panel">
+              <div class="text-component">
+                <h4>Clarity on the website’s information architecture</h4>
+                <p>
+                  version of the future application. It demonstrates a basic idea of what the app
+                  will look like and how it will work. After receiving client feedback, the
+                  development team modifies the prototype and presents it to the client again for
+                  evaluation. Once the client approves the prototype, it is used as a requirement
+                  for building the actual application.
+                </p>
+              </div>
+            </section>
+
+            <section id="tab1Panel3" class="tabs-v3__panel js-tabs__panel">
+              <div class="text-component">
+                <h4>Content drives engagement and action</h4>
+                <p>
+                  First, content engages readers and drives them to take the actions necessary to
+                  fulfill a site’s goals. This is affected by both the content itself (the writing),
+                  and how it’s presented (the typography and structural elements). Dull, lifeless,
+                  and overlong prose rarely keeps visitors’ attention for long. Short, snappy, and
+                  intriguing content grabs them and gets them to click through to other pages. Even
+                  if your pages need a lot of content — and often, they do — properly “chunking”
+                  that content by breaking it up into short paragraphs supplemented by visuals can
+                  help it keep a light, engaging feel.
+                </p>
+              </div>
+            </section>
+
+            <section id="tab1Panel4" class="tabs-v3__panel js-tabs__panel">
+              <div class="text-component">
+                <h4>Development and Coding</h4>
+                <p>
+                  At the development stage, all the requirements from the previous phases are
+                  transformed into the actual system. Developers define the most relevant front-end
+                  frameworks, tools, and the best development practices to ensure that the product
+                  is developed in the most efficient way. They purchase and install the respective
+                  software and hardware and create the actual code on the basis of given
+                  specifications. At this stage the frond-developer:
+                </p>
+              </div>
+            </section>
+
+            <section id="tab1Panel5" class="tabs-v3__panel js-tabs__panel">
+              <div class="text-component">
+                <h4>Launch</h4>
+                <p>
+                  Now it’s time for everyone’s favorite part of the website design process: When
+                  everything has been thoroughly tested, and you’re happy with the site, it’s time
+                  to launch. Don’t expect this to go perfectly. There may be still some elements
+                  that need fixing. Web design is a fluid and ongoing process that requires constant
+                  maintenance. Web design — and really, design in general — is all about finding the
+                  right balance between form and function. You need to use the right fonts, colors,
+                  and design motifs. But the way people navigate and experience your site is just as
+                  important.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- _2_feature-v13 -->
+    <section class="position-relative z-index-1 padding-y-lg">
+      <div class="container max-width-adaptive-lg">
+        <div class="grid gap-md items-center">
+          <div class="col-6@md">
+            <div class="text-component">
+              <h2>Tools of my Craft</h2>
+              <p>
+                My approach towards web development is to make things as simple as possible.
+                Therefore I choose to work with core web technologies that has powered the web since
+                it infancy. Having said that I avoid using and adding unwanted layers of abstraction
+                and complexities to my code. I write standard based semantic code which can be
+                accessible and is easy to maintain and search-engine friendly. I often tend to
+                breakdown my webpages into smaller pieces called components and build them in a way
+                that can exist outside the context of the design they first appeared in. I initiate
+                my projects by creating a style guide. So that the others involved can rely on the
+                same to understand a project’s language and produce a more consistent user
+                experience.
+              </p>
+            </div>
+
+            <div class="margin-top-sm">
+              <div class="flex flex-wrap gap-sm items-center">
+                <a href="#0" class="btn btn--sm btn--primary">Download</a>
+                <a href="#0" class="color-inherit">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6@md">
+            <div class="diamond-grid">
+              <div class="diamond-grid__inner">
+                <div class="diamond-grid__item bg-contrast-lower shadow-md">
+                  <img class="diamond-grid__img" src="/img/css.png" alt="Image description" />
+                </div>
+
+                <div class="diamond-grid__item bg-contrast-lower shadow-md">
+                  <img class="diamond-grid__img" src="/img/js.png" alt="Image description" />
+                </div>
+
+                <div class="diamond-grid__item bg-contrast-lower shadow-md">
+                  <img class="diamond-grid__img" src="/img/node.png" alt="Image description" />
+                </div>
+
+                <div class="diamond-grid__item bg-contrast-lower shadow-md">
+                  <img class="diamond-grid__img" src="/img/sass.jpg" alt="Image description" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <%= require('../partials/footer.html?raw') %>
+  </body>
+</html>

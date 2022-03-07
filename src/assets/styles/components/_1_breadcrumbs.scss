@@ -1,0 +1,31 @@
+@use '../base' as *;
+
+/* -------------------------------- 
+
+File#: _1_breadcrumbs
+Title: Breadcrumbs
+Descr: List of links to help the user move within website structure
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.breadcrumbs {
+  height: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // background-color: var(--color-primary);
+}
+
+.breadcrumbs__list {
+}
+
+.breadcrumbs__logo {
+}
+
+.breadcrumbs__item {
+  display: inline-block; // flex fallback
+  display: inline-flex;
+  align-items: center;
+}

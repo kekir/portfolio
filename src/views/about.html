@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      document.getElementsByTagName('html')[0].className += ' js'
+    </script>
+    <script defer src="./frontend.js"></script>
+
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.png" />
+    <!-- <link rel="stylesheet" href="assets/styles/main.scss" /> -->
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+
+  <body>
+    <%= require('../partials/header.html?raw') %>
+
+    <!-- breadcrumbs content -->
+    <%= require('../partials/pagehead.html?raw') %>
+
+    <!-- _2_feature-v15 -->
+    <section class="feature-v15 parallax-img padding-md padding-0@md js-parallax-img">
+      <div class="max-width-xl margin-x-auto position-relative z-index-2">
+        <div class="grid">
+          <div class="col-6@md">
+            <div
+              class="feature-v15__content bg bg-opacity-80% padding-md padding-y-xxl@md padding-x-lg@lg padding-y-lg@lg"
+            >
+              <div class="text-component">
+                <h4>This is me, if at all,</h4>
+                <p>
+                  I am pretty much self-taught with high level of independent learning skills. This
+                  ability has helped me keep up with the rapidly evolving technical landscape of
+                  modern web development. As freelance web developer and designer, I collaborate
+                  with UI / Graphic designers on a daily basis to accomplish web based projects.
+                </p>
+              </div>
+
+              <div class="margin-top-sm">
+                <a class="btn btn--subtle" href="#0">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="position-absolute z-index-1 top-0 left-0 height-100% width-100% overflow-hidden">
+        <figure class="parallax-img__assets height-100% width-100% js-parallax-img__assets">
+          <img
+            class="height-100% width-100% object-cover"
+            src="/img/about.jpg"
+            alt="Image Description"
+            style="transform: translateZ(150px)"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <!-- TIMELINE / _1_vertical-timeline -->
+    <div class="position-relative z-index-1 overflow-hidden padding-y-xl bg-dark">
+      <div class="margin-bottom-lg">
+        <h2 class="text-center">My Experience</h2>
+      </div>
+
+      <div class="container max-width-adaptive-xl">
+        <div class="v-timeline js-v-timeline" data-animation="on">
+          <section class="v-timeline__section js-v-timeline__section">
+            <div
+              class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark"
+              aria-hidden="true"
+            ></div>
+
+            <div class="v-timeline__items-group">
+              <div class="v-timeline__item bg-light padding-sm radius-md shadow-xs">
+                <div class="v-timeline__date margin-bottom-sm">
+                  <time class="v-timeline__date-value" datetime="2020-03-18T00:00">
+                    Frontend Development Melbourne : [2022-2017]
+                  </time>
+                </div>
+
+                <div class="text-component">
+                  <!-- <h5>A brief..</h5> -->
+
+                  <p class="text-sm text-sm@lg">
+                    For the past five years or so I have gained invaluable commercial experince, as
+                    a forntend developer. I am currently working with a set of selected client base.
+                    They mostly comprise of start-ups, small to midsized companies, where I am
+                    always being challenged to build features that are user centric and solves
+                    specific business problems.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="v-timeline__section js-v-timeline__section">
+            <div
+              class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark"
+              aria-hidden="true"
+            ></div>
+
+            <div class="v-timeline__items-group">
+              <div class="v-timeline__item bg-light padding-sm radius-md shadow-xs">
+                <div class="text-component">
+                  <!-- <h5>A brief..</h5> -->
+
+                  <p class="text-sm text-sm@lg">
+                    Through these years, my primary focus has been on forntend development. But
+                    having a print design background, I also have an inherent liking for design. As
+                    modern websites are a perfect combination of design, server side technologies
+                    and the user interface. Having gained experience in both aspects allow me
+                    optimize projects that exhibits the same
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="v-timeline__section js-v-timeline__section">
+            <div
+              class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark"
+              aria-hidden="true"
+            ></div>
+
+            <div class="v-timeline__items-group">
+              <div class="v-timeline__item bg-light padding-sm radius-md shadow-xs">
+                <div class="text-component">
+                  <!-- <h5>A brief..</h5> -->
+
+                  <p class="text-sm text-sm@lg">
+                    Having studied Information Architecture and having experince in the same allows
+                    me to develop, wireframes, sitemaps and user experience design which I put to
+                    good use on every project I work on.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="v-timeline__section js-v-timeline__section">
+            <div
+              class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark"
+              aria-hidden="true"
+            ></div>
+
+            <div class="v-timeline__items-group">
+              <div class="v-timeline__item bg-light padding-sm radius-md shadow-xs">
+                <div class="text-component">
+                  <!-- <h5>A brief..</h5> -->
+
+                  <p class="text-sm text-sm@lg">
+                    Seemless interactivity and flow of design are of primary importance. I have a
+                    keen interest in web animation and its realtime use cases. Therefore I
+                    particularly like working on websites and imparting them seamless transitions
+                    with high-level performance to maintain a smooth and appealing website.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="v-timeline__section js-v-timeline__section">
+            <div
+              class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark"
+              aria-hidden="true"
+            ></div>
+
+            <div class="v-timeline__items-group">
+              <div class="v-timeline__item bg-light padding-sm radius-md shadow-xs">
+                <div class="text-component">
+                  <!-- <h5>A brief..</h5> -->
+
+                  <p class="text-sm text-sm@lg">
+                    According to client's requirment for the project, I have created rapid
+                    prototypes of interfaces to be used as blueprints for development. I have also
+                    actively participated in stand-up meetings, during planning and design sessions.
+                    Expertise in developing and updating web pages using Vanilla JS CSS and
+                    JavaScript technologies
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="v-timeline__section js-v-timeline__section">
+            <div
+              class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark"
+              aria-hidden="true"
+            ></div>
+
+            <div class="v-timeline__items-group">
+              <div class="v-timeline__item bg-light padding-sm radius-md shadow-xs">
+                <div class="text-component">
+                  <!-- <h5>A brief..</h5> -->
+
+                  <p class="text-sm text-sm@lg">
+                    I have worked closely with designers, developers and stakeholder and pride
+                    myself in completing each project to utmost client satisfactions. Designed
+                    mobile and web products as a freelance designer for a variety of individuals and
+                    companies. I helped many clients achieve their business goals and better
+                    understand what problem their product is trying to solve and how to empathize
+                    with their users through user experience research processes and methodologies
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="v-timeline__section js-v-timeline__section">
+            <div
+              class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark"
+              aria-hidden="true"
+            ></div>
+
+            <div class="v-timeline__items-group">
+              <div class="v-timeline__item bg-light padding-md radius-md shadow-xs">
+                <div class="text-component">
+                  <p class="text-sm text-sm@lg">
+                    Having worked on a multitude of web and print based projects for a range of
+                    clients and providing solution for Web Design and Development. I have a strong
+                    portfolio to exhibit my skills, please folow the link to do so...
+                  </p>
+
+                  <!-- <figure class="text-component__block">
+                    <img src="/img/folio-1.jpg" alt="Image description" />
+                  </figure> -->
+
+                  <div class="margin-top-md">
+                    <a class="btn btn--primary" href="/portfolio.html">view my work</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill -->
+    <section class="position-relative z-index-1 padding-y-lg">
+      <div class="margin-bottom-lg">
+        <h2 class="text-center">Skillset</h2>
+      </div>
+      <div class="container max-width-adaptive-lg">
+        <div class="grid gap-md">
+          <div class="col-6@md">
+            <div class="text-component">
+              <h1 class="text-md">TECHNICAL SKILLS:</h1>
+              <ul>
+                <li>Web technologies: HTML5, CSS3, JavaScript, JQuery</li>
+                <li>JavaScript Libraries: JQuery, NodeJS, ReactJS</li>
+                <li>Database: MySQL,</li>
+                <li>IDE & Tools: Visual Studio</li>
+                <li>Version Control: SVN, GIT, CVS</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-6@md">
+            <div class="text-component">
+              <h1 class="text-md">SOFT SKILLS:</h1>
+              <ul>
+                <li>Efficient and effective communication skills</li>
+                <li>Assertive, innovative, long-range thinker</li>
+                <li>Self-organized and able to work independently</li>
+                <li>Great time managment for faster and e!icient work</li>
+                <li>Open and adoptable to changes and unexpected obstacles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRESS / _1_circular-progress-bar -->
+    <section class="position-relative z-index-1 padding-y-xl bg-dark">
+      <div class="container flex flex-center gap-lg max-width-adaptive-lg">
+        <div class="c-progress-bar js-c-progress-bar" data-progress="91%" data-animation="on">
+          <p class="sr-only" aria-live="polite" aria-atomic="true">
+            Progress value is <span class="js-c-progress-bar__aria-value">30%</span>
+          </p>
+          <h4 class="text-center">HTML</h4>
+
+          <div class="c-progress-bar__shape" aria-hidden="true">
+            <span class="c-progress-bar__value text-xl">
+              <span class="js-c-progress-bar__value">30</span><i>%</i>
+            </span>
+
+            <svg viewBox="0 0 100 100" fill="none" stroke-linecap="round">
+              <circle class="c-progress-bar__bg" cx="50" cy="50" r="44"></circle>
+              <circle class="c-progress-bar__fill" cx="50" cy="50" r="44"></circle>
+            </svg>
+          </div>
+        </div>
+
+        <div class="c-progress-bar js-c-progress-bar" data-progress="83%" data-animation="on">
+          <p class="sr-only" aria-live="polite" aria-atomic="true">
+            Progress value is <span class="js-c-progress-bar__aria-value">30%</span>
+          </p>
+          <h4 class="text-center">CSS</h4>
+          <div class="c-progress-bar__shape" aria-hidden="true">
+            <span class="c-progress-bar__value text-xl">
+              <span class="js-c-progress-bar__value">30</span><i>%</i>
+            </span>
+
+            <svg viewBox="0 0 100 100" fill="none" stroke-linecap="round">
+              <circle class="c-progress-bar__bg" cx="50" cy="50" r="44"></circle>
+              <circle class="c-progress-bar__fill" cx="50" cy="50" r="44"></circle>
+            </svg>
+          </div>
+        </div>
+
+        <div class="c-progress-bar js-c-progress-bar" data-progress="78%" data-animation="on">
+          <p class="sr-only" aria-live="polite" aria-atomic="true">
+            Progress value is <span class="js-c-progress-bar__aria-value">30%</span>
+          </p>
+          <h4 class="text-center">SCSS</h4>
+          <div class="c-progress-bar__shape" aria-hidden="true">
+            <span class="c-progress-bar__value text-xl">
+              <span class="js-c-progress-bar__value">30</span><i>%</i>
+            </span>
+
+            <svg viewBox="0 0 100 100" fill="none" stroke-linecap="round">
+              <circle class="c-progress-bar__bg" cx="50" cy="50" r="44"></circle>
+              <circle class="c-progress-bar__fill" cx="50" cy="50" r="44"></circle>
+            </svg>
+          </div>
+        </div>
+
+        <div class="c-progress-bar js-c-progress-bar" data-progress="75%" data-animation="on">
+          <p class="sr-only" aria-live="polite" aria-atomic="true">
+            Progress value is <span class="js-c-progress-bar__aria-value">30%</span>
+          </p>
+          <h4 class="text-center">JS</h4>
+          <div class="c-progress-bar__shape" aria-hidden="true">
+            <span class="c-progress-bar__value text-xl">
+              <span class="js-c-progress-bar__value">30</span><i>%</i>
+            </span>
+
+            <svg viewBox="0 0 100 100" fill="none" stroke-linecap="round">
+              <circle class="c-progress-bar__bg" cx="50" cy="50" r="44"></circle>
+              <circle class="c-progress-bar__fill" cx="50" cy="50" r="44"></circle>
+            </svg>
+          </div>
+        </div>
+
+        <div class="c-progress-bar js-c-progress-bar" data-progress="61%" data-animation="on">
+          <p class="sr-only" aria-live="polite" aria-atomic="true">
+            Progress value is <span class="js-c-progress-bar__aria-value">30%</span>
+          </p>
+          <h4 class="text-center">React</h4>
+          <div class="c-progress-bar__shape" aria-hidden="true">
+            <span class="c-progress-bar__value text-xl">
+              <span class="js-c-progress-bar__value">30</span><i>%</i>
+            </span>
+
+            <svg viewBox="0 0 100 100" fill="none" stroke-linecap="round">
+              <circle class="c-progress-bar__bg" cx="50" cy="50" r="44"></circle>
+              <circle class="c-progress-bar__fill" cx="50" cy="50" r="44"></circle>
+            </svg>
+          </div>
+        </div>
+
+        <div class="c-progress-bar js-c-progress-bar" data-progress="75%" data-animation="on">
+          <p class="sr-only" aria-live="polite" aria-atomic="true">
+            Progress value is <span class="js-c-progress-bar__aria-value">30%</span>
+          </p>
+          <h4 class="text-center">Node-js</h4>
+          <div class="c-progress-bar__shape" aria-hidden="true">
+            <span class="c-progress-bar__value text-xl">
+              <span class="js-c-progress-bar__value">30</span><i>%</i>
+            </span>
+
+            <svg viewBox="0 0 100 100" fill="none" stroke-linecap="round">
+              <circle class="c-progress-bar__bg" cx="50" cy="50" r="44"></circle>
+              <circle class="c-progress-bar__fill" cx="50" cy="50" r="44"></circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features  -->
+    <!-- <section class="position-relative z-index-1 padding-y-lg">
+      <div class="margin-bottom-lg">
+        <h2 class="text-center">My Journey...</h2>
+      </div>
+      <div class="container max-width-adaptive-lg">
+        <div class="grid gap-md">
+          <div class="col-6@md">
+            <div class="flex gap-sm">
+              <figure class="flex-shrink-0">
+                <img
+                  class="block width-xl width-xxxl@md"
+                  src="/img/favicon.png"
+                  alt="Image description"
+                />
+              </figure>
+
+              <div class="text-component">
+                <h4>Feature One</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda
+                  doloribus eos provident modi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6@md">
+            <div class="flex gap-sm">
+              <figure class="flex-shrink-0">
+                <img
+                  class="block width-xl width-xxxl@md"
+                  src="/img/favicon.png"
+                  alt="Image description"
+                />
+              </figure>
+
+              <div class="text-component">
+                <h4>Feature Two</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio
+                  inventore architecto.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6@md">
+            <div class="flex gap-sm">
+              <figure class="flex-shrink-0">
+                <img
+                  class="block width-xl width-xxxl@md"
+                  src="/img/favicon.png"
+                  alt="Image description"
+                />
+              </figure>
+
+              <div class="text-component">
+                <h4>Feature Three</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda
+                  doloribus eos provident modi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6@md">
+            <div class="flex gap-sm">
+              <figure class="flex-shrink-0">
+                <img
+                  class="block width-xl width-xxxl@md"
+                  src="/img/favicon.png"
+                  alt="Image description"
+                />
+              </figure>
+
+              <div class="text-component">
+                <h4>Feature Four</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio
+                  inventore architecto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <%= require('../partials/footer.html?raw') %>
+  </body>
+</html>
