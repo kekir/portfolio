@@ -17,10 +17,11 @@ Usage: codyhouse.co/license
   background-position: center center;
   background-image: linear-gradient(
       to bottom,
-      alpha(var(--color-secondary), 0.4),
-      alpha(var(--color-black), 0.8)
+      alpha(var(--color-white), 0.3),
+      alpha(var(--color-secondary-dark), 1)
     ),
     url(../img/one.jpg);
+  // color: var(--color-white);
 }
 
 // --overlay-layer

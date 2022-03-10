@@ -12,6 +12,7 @@ Usage: codyhouse.co/license
 .card-v5 {
   background-color: alpha(var(--color-contrast-lower), 0.3);
   border: 2px solid var(--color-primary);
+  height: 100%;
 }
 
 .card-v5__img-link {
@@ -45,4 +46,5 @@ Usage: codyhouse.co/license
 
 .card-v5__content {
   padding: var(--space-sm);
+  margin-bottom: auto;
 }
